@@ -1,0 +1,150 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    position: relative;
+    background-color: #2c3e50;
+    min-height: 100vh;
+    color: white;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+.sidebar .admin-section {
+    margin-bottom: 10px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.sidebar a:hover {
+    background-color: #34495e;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+a.button,button.button {
+    background-color: #2ecc71;
+    color: white;
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;    /* Asegura que herede la fuente del body */
+    font-size: 1em;          /* Tamaño consistente */
+    font-weight: normal; 
+}
+
+a.btn-eliminar, button.btn-eliminar {
+   background-color:#e74c3c;;
+    color: white;
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;    /* Asegura que herede la fuente del body */
+    font-size: 1em;          /* Tamaño consistente */
+    font-weight: normal; 
+}
+
+
+a.btn-editar{
+    background-color:#F1C40F;
+    color: white;
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;    /* Asegura que herede la fuente del body */
+    font-size: 1em;          /* Tamaño consistente */
+    font-weight: normal; 
+}
+
+button.btn-cancelar {
+    background-color: #007bff;
+    color: white;
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;    /* Asegura que herede la fuente del body */
+    font-size: 1em;          /* Tamaño consistente */
+    font-weight: normal; 
+}
+
+a.button, button.button, a.btn-eliminar, button.btn-eliminar, a.btn-editar, button.btn-editar, button.btn-cancelar {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+a.button:hover,button.button:hover {
+    background-color: #27ae60;
+}
+
+a.btn-eliminar:hover, button.btn-eliminar:hover {
+    background-color: #c0392b;
+}
+
+
+a.btn-editar:hover{
+    background-color: #F39C12;
+}
+
+button.btn-cancelar:hover {
+    background-color: #0056b3;
+}
+
+.sidebar a.active-sidebar-item {
+    font-weight: bold;
+    position: relative;
+}
+
+.sidebar a.active-sidebar-item::after {
+    content: '»';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #007bff;
+    font-size: 1.2em;
+}
+
